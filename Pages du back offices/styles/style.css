@@ -229,19 +229,18 @@ input[type=range]::-webkit-slider-runnable-track {
     width: 20%;
     height: 50px;
 }
-.forfait_mob .ori{
-    width: 80%;
-}
+
 .forfait_mob_desc .forfait{
     font-family: arial;
     font-size: 12pt;
     font-weight: bold;
     color: #323232;
 }
-.forfait_mob_desc span{
+.forfait_mob_desc .parag{
     font-family: arial;
     font-size: 10pt;
     color: #323232;
+    width: 165px;
 }
 .forfait_mob_desc .mois{
     font-family: arial;
@@ -268,13 +267,15 @@ input[type=range]::-webkit-slider-runnable-track {
     position: relative;
 
 }
-.forfait_mob_desc a{
-    padding: 3% 6% 3% 6%;
-    background-color: #2bb04a;
+.forfait_mob_desc .lien a{
     color: #ffffff;
-    border-radius: 6px;
     font-family: arial;
     font-size: 12pt;
+}
+.forfait_mob_desc .lien{
+    padding: 3% 6% 3% 6%;
+    background-color: #2bb04a;
+    border-radius: 6px;
     position: absolute;
     right: -3px;
     top: 52px;
@@ -1242,7 +1243,7 @@ input[type=range]::-webkit-slider-runnable-track {
 .produit_mob{
     margin-top: 18px;
     border: 3px solid #f7f7f7;
-    /*    margin-bottom: 20px;*/
+    margin-bottom: 20px;
 }
 .filtre_p{
     margin-top: 30px;
@@ -1315,14 +1316,9 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 .produit_mob .produit_mob_desc .produit_img img{
-    max-width: 80%;
+    max-width: 50px;
     height: auto;
-}
-.produit_mob .produit_mob_desc .produit_img{
-    width: 21%;
-    margin-left: 10px;
-    margin-top: 16px;
-
+    margin-top: 22px;
 }
 
 .produit_mob .produit_mob_desc .produit_op .produit_operateur{
@@ -1337,24 +1333,11 @@ input[type=range]::-webkit-slider-runnable-track {
     justify-content: space-around;
     height: 155px;
 }
-.produit_mob .produit_mob_desc .produit_op .produit_operateur_logo{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    height: 155px;
+.produit_mob .produit_mob_desc .produit_op .produit_operateur img{
     width: 50px;
-}
-.produit_mob .produit_mob_desc .produit_op .produit_operateur_logo img{
-    max-width: 88%;
     height: auto;
 }
-.produit_mob .produit_mob_desc .produit_op .produit_operateur_logo .logo_cach{
+.produit_mob .produit_mob_desc .produit_op .produit_operateur .logo_cach {
     -webkit-filter: grayscale(90%);
 }
 .produit_mob .produit_mob_desc .produit_op .produit_operateur p{
@@ -1363,9 +1346,9 @@ input[type=range]::-webkit-slider-runnable-track {
 .produit_mob .produit_mob_desc .produit_op .produit_operateur strong{
     font-family: arial;
     color: #323232;
-    font-size: 16pt;
+    font-size: 15pt;
 }
-.produit_mob .produit_mob_desc .produit_op .produit_operateur strong sup{
+.produit_mob .produit_mob_desc .produit_op .produit_operateur strong sup {
     font-family: arial;
     color: #323232;
     font-size: 9pt;
@@ -1380,10 +1363,8 @@ input[type=range]::-webkit-slider-runnable-track {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
 }
-.produit_mob a{
+.produit_mob .lien a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1396,7 +1377,6 @@ input[type=range]::-webkit-slider-runnable-track {
     margin-bottom: 20px;
     font-size: 13pt;
 }
-
 .lien-filtre_prod span {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1975,7 +1955,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 
     /* PAGE-PRODUIT*/
-    .filtre_p{
+     .filtre_p{
         display: block;
     }
     .produit_mob h3 {
@@ -1985,62 +1965,45 @@ input[type=range]::-webkit-slider-runnable-track {
         margin-left: 10px;
         color: #323232;
     }
-    .produit_mob .produit_mob_desc .produit_op .produit_operateur_logo {
-        width: 72px;
-        height: 300px;
-    }
-    .produit_mob .produit_mob_desc .produit_img img {
-        max-width: 83px;
-        height: auto;
-        margin-top: 56px;
-    }
-    .produit_mob .produit_mob_desc .produit_op .produit_operateur_logo img {
-        max-width: 100%;
-        margin-top: 24px;
-        height: auto;
-    }
-    .produit_mob .produit_mob_desc .produit_op .produit_operateur p {
-        margin-left: 10px;
-        margin-top: 47px;
-    }
+    
     .produit_mob .produit_mob_desc .produit_op .produit_operateur {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        height: 283px;
-        /*
-        height: 155px;
-        margin-top: 30px;
-        */
-    }
-    .produit_mob a { 
-        display: -webkit-box; 
-        display: -ms-flexbox; 
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        font-family: arial;
-        color: #096ec8;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 16pt;
-        margin-top: 32px;
-    }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: 270px;
+}
     .produit_mob .produit_mob_desc .produit_op .produit_operateur strong {
-        font-family: arial;
-        color: #323232;
-        font-size: 25pt;
-    }
+    font-family: arial;
+    color: #323232;
+    font-size: 25pt;
+}
     .produit_mob .produit_mob_desc .produit_op .produit_operateur strong sup {
-        font-family: arial;
-        color: #323232;
-        font-size: 13pt;
-    }
+    font-family: arial;
+    color: #323232;
+    font-size: 13pt;
+}
+    .produit_mob .produit_mob_desc .produit_img {
+    width: 21%;
+    margin-left: 10px;
+    margin-top: 16px;
+}
+    .produit_mob .produit_mob_desc .produit_img img {
+    max-width: 83px;
+    height: auto;
+/*    margin-top: 56px;*/
+}
+    .produit_mob .produit_mob_desc .produit_op .produit_operateur img {
+    width: 72px;
+    /* margin-top: 24px; */
+    height: auto;
+}
+ 
     .filtre_p input {
         width: 50%;
     }
@@ -2655,13 +2618,13 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     .forfait_bur .prix strong{
-        font-size: 30pt;
+        font-size: 26pt;
         font-family: arial;
         font-weight: bold;
         color:#323232;
     }
     .forfait_bur .prix strong sup{
-        font-size: 16pt;
+        font-size: 14pt;
         font-family: arial;
         font-weight: bold;
         color:#323232;
@@ -3494,16 +3457,40 @@ input[type=range]::-webkit-slider-runnable-track {
         font-family: arial;
         color: #323232;
         font-size: 12pt;
+        margin-top: -13px;
     }
-    .abo_internet_contain .abo_internet .abo_internet_desc .desc a{
+    .abo_internet_contain .abo_internet .abo_internet_desc .desc p span{
+        font-family: arial;
+        color: #323232;
+        font-size: 12pt;
+        margin-right: 50px;
+    }
+     .abo_internet_contain .abo_internet .abo_internet_desc .desc p strong{
+        font-family: arial;
+        color: #323232;
+        font-size: 26pt;
+       
+    }
+    .abo_internet_contain .abo_internet .abo_internet_desc .desc p strong sup{
+        font-family: arial;
+        color: #323232;
+        font-size: 14pt;
+       
+    }
+    .abo_internet_contain .abo_internet .abo_internet_desc .desc .lien_plus a{
         background-color: #2bb04a;
         color: #ffffff;
         padding: 10px 35px 10px 35px;
         border-radius: 7px;
         font-family: arial;
         font-size: 14pt;
-        margin-left: 224px;
     }
+    
+    .abo_internet_contain .abo_internet .abo_internet_desc .desc .lien_plus{
+        margin-left: 224px;
+            margin-top: 33px;
+    }
+    
     .abo_internet_contain .lien{
         display: flex;
         justify-content: center;
@@ -4289,32 +4276,29 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 
     /*PAGE-PRODUIT*/
-    .produit_home{
-        display: block;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        /*
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        */
-        margin-top: 18px;
-    }
-    .produit_home .produit_bur{
-        border: 2px solid #f0efef;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        width: 30%;
-        padding-top: 20px;
-        /*        padding-bottom: 20px;*/
-        padding-bottom: 8px;
-    }
-    .produit_home .produit_bur a{
+   .produit_home {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 18px;
+}
+    .produit_home .produit_bur {
+    border: 2px solid #f0efef;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 30%;
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+    padding-bottom: 8px;
+}
+    .produit_home .produit_bur .lien a{
         font-family: arial;
         font-size: 14pt;
         color: #096ec8;
-        margin-left: 190px;
+    }
+    .produit_home .produit_bur .lien{
+        margin-left: 164px;
     }
     .produit_home .produit_bur h3{
         font-family: arial;
@@ -4353,6 +4337,7 @@ input[type=range]::-webkit-slider-runnable-track {
         margin-top: -20px;
     }
     .produit_home .produit_mob_desc .produit_op .produit_operateur{
+/*
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -4362,6 +4347,7 @@ input[type=range]::-webkit-slider-runnable-track {
         flex-direction: column;
         -ms-flex-pack: distribute;
         justify-content: space-around;
+*/
         width: 19%;
     }
     .produit_home .produit_mob_desc .produit_op .bloc_desc{
@@ -4681,6 +4667,11 @@ input[type=range]::-webkit-slider-runnable-track {
         font-size: 11pt;
         color: #323232;
     }
+    .offre_produit .offre_produit_desc .desc_bloc p a{
+        font-family: arial;
+        font-size: 11pt;
+        color: #323232;
+    }
     .offre_produit .offre_produit_desc .prix{
         display: -webkit-box;
         display: -ms-flexbox;
@@ -4742,8 +4733,10 @@ input[type=range]::-webkit-slider-runnable-track {
         font-size: 13pt;
         margin-left: 12px;
     }
-    .produit_home .produit_bur a {
+    .produit_home .produit_bur .lien a {
         font-size: 13pt;
+    }
+    .produit_home .produit_bur .lien{
         margin-left: 99px;
     }
     .produit_home .produit_mob_desc .produit_op .bloc_desc strong {
@@ -4837,8 +4830,10 @@ input[type=range]::-webkit-slider-runnable-track {
     .filtre_home_pr .lien a {
         font-size: 11pt;
     }
-    .produit_home .produit_bur a {
+    .produit_home .produit_bur .lien a {
         font-size: 12pt;
+    }
+    .produit_home .produit_bur .lien {
         margin-left: 73px;
     }
     .filtre_bur_lien{
@@ -5349,8 +5344,10 @@ input[type=range]::-webkit-slider-runnable-track {
         width: 12%;
     }
 
-    .produit_home .produit_bur a {
+    .produit_home .produit_bur .lien a {
         font-size: 11pt;
+    }
+     .produit_home .produit_bur .lien {
         margin-left: 53px;
     }
     .produit_home .produit_mob_desc .produit_op .bloc_desc strong {
@@ -5389,14 +5386,6 @@ input[type=range]::-webkit-slider-runnable-track {
     }
 }
 
-/*QUELQUES-IMAGES*/
-/*
-<img src="https://cdiscount-dvpt.kreatec.fr/uploads/operator/8fd27c4f531792c104f17ab4aa4c89e2.png" alt="logo-operateur">
-
-<img src="https://cdiscount-dvpt.kreatec.fr/uploads/operator/eaab56f48551adb10fb365dcfe65aa63.jpeg" alt="logo-operateur">
-
-<img src="https://cdiscount-dvpt.kreatec.fr/uploads/operator/57205a9bbd9021c7a6cdbb0df9fa59ff.png" alt="logo-operateur">
-*/
 
 
 
